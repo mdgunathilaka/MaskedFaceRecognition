@@ -15,6 +15,8 @@ Labelled Faces in the Wild dataset. This contains more than 13,000 images of fac
 - YouTube Faces
 YouTube Faces dataset is a database of face videos designed for studyning the problem of unconstrained face recognition in videos. This contains 3,425 videos downloaded from youtube. Available on https://www.cs.tau.ac.il/~wolf/ytfaces/
 
+To generate synthetic masks on faces, I intend follow the approach by Dr.Sachith. https://github.com/sachith500/MaskedFaceRepresentation
+
 ##Proposed Architecture
 
 The system will have a detector device which consists of a raspberry pi and a camera, a face recognition models that runs on a cloud, and a client app to get the customer details.
@@ -39,4 +41,4 @@ The system will work in a producer consumer pattern. So the detector device will
 1. Raspberry Pi 3b+
 2. Camera (model not finalized yet)
 3. TensorFlow and OpenCV
-4. Azure, Docker and Flutter
+4. Google Cloud, Docker and Flutter
