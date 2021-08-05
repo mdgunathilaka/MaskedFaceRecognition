@@ -1,11 +1,11 @@
 # MaskedFaceRecognition
 
-##project description
+## project description
 
 This is the repository for my semster 5 Industrial Computer Engineering project. Theis project focuses on building an accurate facial recognition system which can identify people using thier facial features while they are wearing masks. Then that system will be used as a customer identification system for a resturant. It will help with provinfing customer's previous meal or privious table.
 There are such systems already in the market but since the covid pandemic, it is known that most of those systems could not identify masked people.
 
-##Data
+## Data
 
 Since the facial recognition is done by using only the parts which are not covered by masks, that leaves only the top 40% of a face. And to make the model acuurate, a large number of faces needed. These are publicly available face datasets I intend to use.
 
@@ -17,7 +17,7 @@ YouTube Faces dataset is a database of face videos designed for studyning the pr
 
 To generate synthetic masks on faces, I intend follow the approach by Dr.Sachith. https://github.com/sachith500/MaskedFaceRepresentation
 
-##Proposed Architecture
+## Proposed Architecture
 
 The system will have a detector device which consists of a raspberry pi and a camera, a face recognition models that runs on a cloud, and a client app to get the customer details.
 
@@ -25,7 +25,7 @@ The system will have a detector device which consists of a raspberry pi and a ca
 
 The system will work in a producer consumer pattern. So the detector device will capture a face and send it to the server, then it will not wait for result to capture the next frame. With this it can capture more frames and provide good quality images. And the recognition server can have a very deep model as well. Currently, the idea is to build it using pretrained vgg-face model as a base.
 
-##Final Demonstration (Planned)
+## Final Demonstration (Planned)
 
 1. Face recognition model (uploaded in a server)
 ![image](https://user-images.githubusercontent.com/59095109/128292341-fa6e3a54-332b-484c-8998-3ba01edbb431.png)
@@ -36,7 +36,7 @@ The system will work in a producer consumer pattern. So the detector device will
 3. App to receive information about the detected people
 ![image](https://user-images.githubusercontent.com/59095109/128292566-e47ce774-7db2-4455-b257-c38796655050.png)
 
-##Components and technologies
+## Components and technologies
 
 1. Raspberry Pi 3b+
 2. Camera (model not finalized yet)
