@@ -20,3 +20,23 @@ YouTube Faces dataset is a database of face videos designed for studyning the pr
 The system will have a detector device which consists of a raspberry pi and a camera, a face recognition models that runs on a cloud, and a client app to get the customer details.
 
 ![image](https://user-images.githubusercontent.com/59095109/128291406-abe10075-319e-43a2-a0cb-24685a5822c1.png)
+
+The system will work in a producer consumer pattern. So the detector device will capture a face and send it to the server, then it will not wait for result to capture the next frame. With this it can capture more frames and provide good quality images. And the recognition server can have a very deep model as well. Currently, the idea is to build it using pretrained vgg-face model as a base.
+
+##Final Demonstration (Planned)
+
+1. Face recognition model (uploaded in a server)
+![image](https://user-images.githubusercontent.com/59095109/128292341-fa6e3a54-332b-484c-8998-3ba01edbb431.png)
+
+2. Raspberry pi integrated with a camera to detect and send images to server
+![image](https://user-images.githubusercontent.com/59095109/128292485-f5f23f02-7eee-4ffe-a317-581b0dc5ac13.png)
+
+3. App to receive information about the detected people
+![image](https://user-images.githubusercontent.com/59095109/128292566-e47ce774-7db2-4455-b257-c38796655050.png)
+
+##Components and technologies
+
+1. Raspberry Pi 3b+
+2. Camera (model not finalized yet)
+3. TensorFlow and OpenCV
+4. Azure, Docker and Flutter
