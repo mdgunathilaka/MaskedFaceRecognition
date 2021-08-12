@@ -42,3 +42,7 @@ The system will work in a producer consumer pattern. So the detector device will
 2. Camera (model not finalized yet)
 3. TensorFlow and OpenCV
 4. Google Cloud, Docker and Flutter
+
+## Related Works
+
+1. https://www.researchgate.net/publication/342757061_Efficient_Masked_Face_Recognition_Method_during_the_COVID-19_Pandemic
