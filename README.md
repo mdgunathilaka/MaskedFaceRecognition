@@ -38,7 +38,7 @@ The system will work in a producer consumer pattern. So the detector device will
 
 ## Components and technologies
 
-1. Raspberry Pi 3b+
+1. Raspberry Pi 3
 2. Camera (Pi camera v1.3)
 3. TensorFlow and OpenCV
 4. Google Cloud, Docker and Flutter
