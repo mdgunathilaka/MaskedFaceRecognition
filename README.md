@@ -46,3 +46,14 @@ The system will work in a producer consumer pattern. So the detector device will
 ## Related Works
 
 1. https://www.researchgate.net/publication/342757061_Efficient_Masked_Face_Recognition_Method_during_the_COVID-19_Pandemic
+
+
+## 2021.10 Updates
+
+- Using cropped images is less efficient. Moved onto detect full face. Used the mediapipe library's MultiFaceDetector. It can detect both masked and unmasked faces with a good accuracy.
+- For the training purpose, finding a big dataset with labeled masked faces was not possible.
+- Generated simulated masks for the LFW dataset and created masked faces.
+- Currently Builing a VGG-face based siamese network for recognizing faces.
+- For the training, image pairs are needed. Creating a list of images for the purpose and then those images will be turned into np arrays and stacked together to build the dataset.
+
+
